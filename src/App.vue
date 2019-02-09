@@ -1,7 +1,9 @@
 <template>
   <div>
-    <validation-area />
-    <validation-area />
+    <validation-area title="1" />
+    <validation-area title="2" />
+    <validation-area title="3" />
+    <validation-area title="4" />
   </div>
 </template>
 
