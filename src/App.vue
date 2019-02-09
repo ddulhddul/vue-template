@@ -1,22 +1,51 @@
 <template>
   <div>
     <h1>{{ message }}</h1>
-    <div>
-      <input name="email" type="text"
-        v-validate="'required|email'"
-        :class="{errorStyle: errors && errors.has('email')}" >
-      <span class="errorMsg">{{ errors.first('email') }}</span>
+
+    <div class="borderArea">
+      <div>
+        <input name="email" type="text" v-validate="'required'"
+          :class="{errorStyle: errors && errors.has('email')}" >
+        <span class="errorMsg">{{ errors.first('email') }}</span>
+      </div>
+      <v-input />
+      <input type="button" @click="submit" value="submit" />
+      <input type="button" @click="clear" value="clear" />
+    </div>
+
+    <div class="borderArea">
+      <div>
+        <input name="test2" type="text" v-validate="'required'"
+          :class="{errorStyle: errors && errors.has('test2')}" >
+        <span class="errorMsg">{{ errors.first('test2') }}</span>
+      </div>
+      <v-input />
+      <input type="button" @click="submit" value="submit" />
+      <input type="button" @click="clear" value="clear" />
     </div>
   </div>
 </template>
 
 <script>
+import "babel-polyfill"
+import VInput from './components/VInput.vue'
+
 export default {
-  name: 'app',
+  components: { VInput },
   data() {
     return {
       message: 'Hello, Vue!!'
-    };
+    }
+  },
+  methods :{
+    async submit(){
+      const validResult = await this.$validator.validate()
+      console.log('validResult', validResult, this.errors)
+    },
+
+    clear(){
+      this.$validator.reset()
+    }
   }
 };
 </script>
@@ -28,5 +57,9 @@ export default {
   }
   .errorMsg{
     color: red;
+  }
+  .borderArea{
+    background-color: bisque;
+    margin-top: 10px
   }
 </style>
