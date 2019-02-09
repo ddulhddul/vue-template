@@ -1,0 +1,39 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "$ npm install --save-dev @babel/core @babel/preset-env axios babel-loader babel-polyfill css-loader glob html-webpack-plugin style-loader text-mask-addons vee-validate vue vue-loader vue-template-compiler vue-text-mask webpack webpack-cli webpack-dev-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddulhddul/vue-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddulhddul/vue-template/issues"
+  },
+  "homepage": "https://github.com/ddulhddul/vue-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^2.1.0",
+    "glob": "^7.1.3",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "text-mask-addons": "^3.8.0",
+    "vee-validate": "^2.1.7",
+    "vue": "^2.6.4",
+    "vue-loader": "^15.6.2",
+    "vue-template-compiler": "^2.6.4",
+    "vue-text-mask": "^6.1.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

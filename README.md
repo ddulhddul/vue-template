@@ -1,2 +1,2 @@
 ## install
-$ npm install --save-dev babel/core babel/preset-env axios babel-loader babel-polyfill css-loader glob html-webpack-plugin style-loader text-mask-addons vee-validate vue vue-loader vue-template-compiler vue-text-mask webpack webpack-cli webpack-dev-server
+$ npm install --save-dev @babel/core @babel/preset-env axios babel-loader babel-polyfill css-loader glob html-webpack-plugin style-loader text-mask-addons vee-validate vue vue-loader vue-template-compiler vue-text-mask webpack webpack-cli webpack-dev-server
